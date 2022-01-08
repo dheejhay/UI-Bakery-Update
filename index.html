@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="main.css" />
+  <title>Bakery Template</title>
+</head>
+
+<body>
+  <header class="first">
+    <div id="wraper">
+      <!--This is an unordered list-->
+
+      <h2>Delicacies</h2>
+
+      <ul class="ul">
+        <li><a href="all products">All Products</a></li>
+        <li><a href="cupcakes">Cupcakes</a></li>
+        <li><a href="doughnuts">Doughnuts</a></li>
+        <li><a href="cakes">Cakes</a></li>
+        <li><a href="Extras">Extras</a></li>
+      </ul>
+
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+
+      <div class="search">
+        <input type="text" placeholder="Search">
+        <button class="btn"><i class="fas fa-search"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!--This is an image slider-->
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <img src="Images/main1.jpg" style="width: 100%" />
+      <div class="text-wrap">
+        <p class="text">Dhee's Bakery</p>
+      </div>
+    </div>
+
+    <div class="mySlides fade">
+      <img src="Images/main2.jpg" style="width: 100%" />
+      <div class="text-wrap">
+        <p class="text">Dhee's Bakery</p>
+      </div>
+    </div>
+
+    <div class="mySlides fade">
+      <img src="Images/main22.jpg" style="width: 100%" />
+      <div class="text-wrap">
+        <p class="text">Dhee's Bakery</p>
+      </div>
+    </div>
+    <div class="mySlides fade">
+      <img src="Images/main3.jpg" style="width: 100%" />
+      <div class="text-wrap">
+        <p class="text">Dhee's Bakery</p>
+      </div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+
+  <section class="second">
+    <p>Recently Added</p>
+    <p id="browse">Browse all <i class="far fa-chevron-right"></i></p>
+
+    <div class="grid">
+        <div class="grid-item">
+            <img src="Images/cc.jpg"> 
+            <p>Glazed Cupcakes</p>
+        </div>
+        <div class="grid-item">
+            <img src="Images/cc1.jpg">
+            <p>Birthday Cupcakes</p>
+        </div>
+        <div class="grid-item">
+            <img src="Images/cc2.jpg">
+            <p>Wedding Cupcakes</p>
+        </div>
+        <div class="grid-item">
+            <img src="Images/cc3.jpg">
+            <p>Chocolate Cupcakes</p>
+        </div>
+        <div class="grid-item">
+            <img src="Images/dd.jpg">
+            <p>Wedding Doughnuts</p>
+        </div>
+        <div class="grid-item">
+            <img src="Images/dd1.jpg">
+            <p>Birthday Doughnuts</p>
+        </div>
+        <div class="grid-item">
+            <img src="Images/dd2.jpg">
+            <p>Glazed Doughnuts</p>
+        </div>
+        <div class="grid-item">
+            <img src="Images/dd3.jpg">
+            <p>Chocolate Glazed</p>
+        </div>
+    </div>
+</section>
+
+<section class="third">
+    <h1>Popular Products</h1>
+
+    <div class="grid">
+        <div class="grid-item">
+            <img src="Images/cs.jpg">
+            <p>Chocolate Cakes</p>
+        </div>
+        <div class="grid-item">
+            <img src="Images/cs1.jpg">
+            <p>Red Velvet</p>
+        </div>
+        <div class="grid-item">
+            <img src="Images/cs2.jpg">
+            <p>Wedding Cakes</p>
+        </div>
+        <div class="grid-item">
+            <img src="Images/cs3.jpg">
+            <p>Birthday Cakes</p>
+        </div>
+    </div>
+</section>
+
+<section class="fourth">
+    <h1>Our History</h1>
+    <p>Our philosophy is built into every piece we make. Cum sociis natoque pentibus et<br> magnis dis parturient
+        montes, nascetur ridiculus mus</p>
+        <p id="continue">Continue reading...</p>
+
+    <p class="ig">Instagram</p>
+
+    <div class="foot">
+        <i class="far fa-chevron-left"></i>
+        <img src="Images/foot.jpg">
+        <img src="Images/foot1.jpg">
+        <img src="Images/foot2.jpg">
+        <img src="Images/foot3.jpg">
+        <img src="Images/foot5.jpg">
+        <img src="Images/foot6.jpg">
+        <i class="far fa-chevron-right"></i>
+    </div>
+
+    <div class="icons">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+    </div>
+</section>
+
+<footer class="end">
+    <p>Powered by Dheejhay <i class="far fa-copyright"></i> 2021 | Theme by Debs</p>
+</footer>
+
+  <script src="index.js"></script>
+</body>
+
+</html>

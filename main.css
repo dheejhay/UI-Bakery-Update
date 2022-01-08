@@ -1,0 +1,292 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.first h2 {
+  font: italic 1.2em "Fira sans", serif;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.ul {
+  display: flex;
+  list-style: none;
+  gap: 3em;
+  color: white;
+  margin-top: -4em;
+  padding-left: 20em;
+}
+
+.ul :hover {
+  opacity: 0.5;
+}
+
+a {
+  text-decoration: none;
+  font-size: 17px;
+  color: black;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
+.search {
+  position: relative;
+  margin-left: 65em;
+  margin-top: -2em;
+}
+
+input {
+  width: 20px;
+  height: 40px;
+  padding: 1em;
+  border: none;
+  transition: width 0.3s ease;
+  color: #fff;
+}
+
+::placeholder {
+  color: #fff;
+}
+
+input:focus {
+  outline: 0;
+}
+
+.btn {
+  position: absolute;
+  left: -30px;
+  top: 0;
+  width: 10px;
+  height: 30px;
+  padding-left: -3.3em;
+  border: none;
+  cursor: pointer;
+  transition: width 0.3s ease;
+  background-color: transparent;
+}
+
+.search.active input {
+  width: 250px;
+  background-color: #101010;
+  border-radius: 10px;
+  color: #fff;
+  margin-top: -2em;
+}
+
+.search.active button {
+  transform: translateX(250px);
+}
+
+.mySlides {
+  display: none;
+}
+
+img {
+  object-fit: cover;
+  object-position: center;
+  height: 100vh;
+}
+
+/* Slideshow container */
+
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 72px;
+  text-shadow: 2px 2px #000000;
+  padding: 5px;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.3);
+  align-self: center;
+  width: 50%;
+  text-align: center;
+  margin-top: -4em;
+}
+.text-wrap {
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-row-gap: 15px;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
+} 
+
+.grid-item img {
+  height: 320px;
+  width: 320px;
+}
+
+.grid-item p {
+  padding: 1em 0em;
+  line-height: 0.5em;
+  text-align: center;
+}
+
+#browse {
+  padding-left: 77em;
+  margin-top: -2em;
+}
+
+.fourth {
+  background-color: rgb(209, 169, 169);
+  padding: 15px;
+  height: 75vh;
+}
+
+.fourth h1 {
+  text-align: center;
+}
+
+.fourth p {
+  text-align: center;
+  padding-top: 17px;
+}
+
+#continue {
+  text-decoration: rgb(153, 86, 86) underline;
+  text-underline-position: under;
+  padding: 1em 0em;
+}
+
+.ig {
+  text-align: center;
+  padding-top: 5em;
+}
+
+.foot {
+  display: flex;
+  gap: 1.5em;
+  justify-content: center;
+}
+
+.foot img {
+  padding-top: 15px;
+  height: 150px;
+  width: 150px;
+  transition: transform .3s;
+
+} 
+
+.foot img:hover {
+  transform: scale(1.5);
+}
+
+.foot i {
+  padding-top: 5em;
+}
+
+.icons {
+  padding-top: 2em;
+  padding-left: 40em;
+}
+
+.end p {
+  padding-top: -2em;
+  text-align: center;
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next {
+    font-size: 11px;
+  }
+  .text {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .prev,
+  .next {
+    font-size: 14px;
+  }
+  .text {
+    font-size: 30px;
+  }
+}
